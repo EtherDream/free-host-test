@@ -146,7 +146,7 @@ console.log('do fetch')
 
 
 exports.onfetch = function(e) {
-  console.warn('ver: 2017.11.17 14:00');
+  console.warn('ver: 2017.11.19 14:00');
 
   let req = e.request;
   let url = new URL(req.url);
@@ -163,7 +163,7 @@ exports.onfetch = function(e) {
   // let hdr = new Headers(req.headers);
   let opt = {
     headers: hdr,
-    // mode: req.mode === 'navigate' ? 'cors' : req.mode,
+    // mode: req.mode === 'navigate' ? 'no-cors' : req.mode,
 
     // method: req.method,
     // credentials: req.credentials,
